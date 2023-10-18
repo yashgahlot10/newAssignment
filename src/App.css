@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+}
+
+.App {
+  background-color: black;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Sidebar {
+  flex: 1;
+}
+
+.MainContainer {
+  background-color: blueviolet;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.SidebarContainer {
+  background-color: rgb(4, 4, 64);
+  width: 100%;
+  height: 100vh;
+}
+
+.SidebarContainer .headcontainer {
+  height: 8vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SidebarContainer .headcontainer h2 {
+  color: white;
+  font-size: 1.7em;
+}
+
+.Sidebar ul {
+  height: 40vh;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.Sidebar li {
+  flex: 2;
+  display: flex;
+  padding: 2vh;
+  margin-top: 2vh;
+  justify-content: center;
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.Sidebar li:hover {
+  background-color: rgb(45, 45, 105);
+  width: 70%;
+  border-radius: 5px;
+}
+
+.Sidebar li.active {
+  background-color: rgb(45, 45, 105);
+  width: 70%;
+  border-radius: 5px;
+}
+
+.SearchContainer ::placeholder {
+  color: rgb(45, 45, 105);
+  font-size: 3vh;
+}
+
+.DashboardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-between;
+  margin: 5vw;
+  margin-top: 0;
+}
+
+.DashboardContainer div {
+  background-color: white;
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
+  border-radius: 20px;
+}
